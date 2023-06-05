@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    
+    <title>Francisco Torres</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+
+    <script src="/js/dark.js" defer=""></script>
+
+</head>
+
+<html>
+<!DOCTYPE html>
+<html>
+
+<body>
+  <header class="site-header">
+
+    <div class="wrapper">
+      <a class="muted small" href="https://torres90.github.io/portfolioblog/">Francisco Torres</a>
+    </div>
+  </header>
+</body>
+
+</html>
+
+<h1>Zombunny Hologram</h1>
+<p class="post-meta"><time itemprop="datePublished">June 4, 2023</time>
+</p>
+<p><img src="/images/hologram_zombunny.gif" alt=""></p>
+<p>As I&rsquo;m refreshing my knowledge on the basics of shaders, I&rsquo;ll try to combine two different effects together.
+Here I&rsquo;m combining a stripes effect using the frac function and a Rim highlight effect to create a hologram.</p>
+<h2 id="source-code">Source code:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>Shader <span style="color:#e6db74">&#34;Custom/Hollogram&#34;</span>  
+</span></span><span style="display:flex;"><span>{  
+</span></span><span style="display:flex;"><span>    Properties  
+</span></span><span style="display:flex;"><span>    {  
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">_RimColor</span> (<span style="color:#e6db74">&#34;Rim Color&#34;</span>, Color) <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>)  
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">_RimPower</span> (<span style="color:#e6db74">&#34;Rim Power&#34;</span>, <span style="color:#a6e22e">Range</span>(<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">8.0</span>)) <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.0</span>  
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">_LinesFrequency</span> (<span style="color:#e6db74">&#34;Lines Frequency&#34;</span>, <span style="color:#66d9ef">float</span>) <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.0</span>  
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">_ProportionBetweenLines</span> (<span style="color:#e6db74">&#34;Gap Size&#34;</span>, <span style="color:#a6e22e">Range</span>(<span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">1.0</span>)) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>  
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">_LinesSpeed</span> (<span style="color:#e6db74">&#34;Lines Speed&#34;</span>, <span style="color:#66d9ef">float</span>) <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.0</span>  
+</span></span><span style="display:flex;"><span>        }  
+</span></span><span style="display:flex;"><span>    SubShader  
+</span></span><span style="display:flex;"><span>    {  
+</span></span><span style="display:flex;"><span>        Tags { <span style="color:#e6db74">&#34;Queue&#34;</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Transparent&#34;</span>}  
+</span></span><span style="display:flex;"><span>        Pass{  
+</span></span><span style="display:flex;"><span>            Zwrite On  
+</span></span><span style="display:flex;"><span>            ColorMask <span style="color:#ae81ff">0</span>  
+</span></span><span style="display:flex;"><span>        }  
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>		CGPROGRAM  
+</span></span><span style="display:flex;"><span>        <span style="color:#960050;background-color:#1e0010">#</span>pragma surface surf Lambert alpha:fade  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">struct</span> Input  
+</span></span><span style="display:flex;"><span>        {  
+</span></span><span style="display:flex;"><span>            float2 uv_MainTex;  
+</span></span><span style="display:flex;"><span>            float3 viewDir;  
+</span></span><span style="display:flex;"><span>            float3 worldPos;  
+</span></span><span style="display:flex;"><span>        };
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        float4 _RimColor;  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> _RimPower;  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> _LinesFrequency;  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> _ProportionBetweenLines;  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> _LinesSpeed;  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">surf</span> (Input IN, inout SurfaceOutput o)  
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>	        half rim <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.0</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">saturate</span>(<span style="color:#a6e22e">dot</span> (<span style="color:#a6e22e">normalize</span>(IN.viewDir), o.Normal));  
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">float</span> rimPower <span style="color:#f92672">=</span> <span style="color:#a6e22e">pow</span> (rim, _RimPower);              
+</span></span><span style="display:flex;"><span>            o.Emission <span style="color:#f92672">=</span> _RimColor.rgb <span style="color:#f92672">*</span> rimPower <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span>;  
+</span></span><span style="display:flex;"><span>            o.Alpha <span style="color:#f92672">=</span> <span style="color:#a6e22e">frac</span>(IN.worldPos.y <span style="color:#f92672">*</span> _LinesFrequency <span style="color:#f92672">+</span> _Time <span style="color:#f92672">*</span> _LinesSpeed) <span style="color:#f92672">&gt;</span> _ProportionBetweenLines <span style="color:#f92672">?</span> rimPower : <span style="color:#ae81ff">0</span>;  
+</span></span><span style="display:flex;"><span>        }        
+</span></span><span style="display:flex;"><span>        ENDCG  
+</span></span><span style="display:flex;"><span>    }  
+</span></span><span style="display:flex;"><span>    FallBack <span style="color:#e6db74">&#34;Diffuse&#34;</span>  
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+
+<footer>
+    <div>
+        <h3><a href="https://torres90.github.io/portfolioblog/posts">Back to all posts</a></h3>
+    </div>
+    <hr>
+    <p>Go <a href="https://torres90.github.io/portfolioblog//index.xml">here</a> for an RSS feed.</p>
+</footer>
+
+</html>

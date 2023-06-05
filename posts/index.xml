@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Francisco Torres&#39; Portfolio</title>
+    <link>https://torres90.github.io/portfolioblog/posts/</link>
+    <description>Recent content in Posts on Francisco Torres&#39; Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://torres90.github.io/portfolioblog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ShaderToy Basics</title>
+      <link>https://torres90.github.io/portfolioblog/posts/shadertoy_basics/</link>
+      <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://torres90.github.io/portfolioblog/posts/shadertoy_basics/</guid>
+      <description>Preparing UVs When writing a shader in ShaderToy, it is usual to prime your uvs in the following way:
+vec2 uv = fragCoord / iResolution.xy;
+this will make it so that your canvas goes from 0 to 1.
+Then we recenter the coordinates, putting (0,0) in the center of the screen, and making the UVs range from -1 to 1:
+v = uv * 2.0 - 1.0;
+Finally, we fix the aspect ratio of the canvas:</description>
+    </item>
+    
+    <item>
+      <title>Zombunny Hologram</title>
+      <link>https://torres90.github.io/portfolioblog/posts/zombunny_hologram/</link>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://torres90.github.io/portfolioblog/posts/zombunny_hologram/</guid>
+      <description>As I&amp;rsquo;m refreshing my knowledge on the basics of shaders, I&amp;rsquo;ll try to combine two different effects together. Here I&amp;rsquo;m combining a stripes effect using the frac function and a Rim highlight effect to create a hologram.
+Source code: Shader &amp;#34;Custom/Hollogram&amp;#34; { Properties { _RimColor (&amp;#34;Rim Color&amp;#34;, Color) = (1,1,1,1) _RimPower (&amp;#34;Rim Power&amp;#34;, Range(0.5, 8.0)) = 3.0 _LinesFrequency (&amp;#34;Lines Frequency&amp;#34;, float) = 3.0 _ProportionBetweenLines (&amp;#34;Gap Size&amp;#34;, Range(0.0, 1.0)) = 0.</description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://torres90.github.io/portfolioblog/posts/test/</link>
+      <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://torres90.github.io/portfolioblog/posts/test/</guid>
+      <description>H1 Normal text.
+Resources https://latexeditor.lagrida.com/ for writing equations.
+Hugo cheat sheet To place files in the root folder of the website, place them inside the &amp;ldquo;static&amp;rdquo; folder. </description>
+    </item>
+    
+    <item>
+      <title>Nokia 3310 screen shader</title>
+      <link>https://torres90.github.io/portfolioblog/posts/nokia_3310_shader/</link>
+      <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://torres90.github.io/portfolioblog/posts/nokia_3310_shader/</guid>
+      <description>For an internal game jam at Arkadium, we each had to pick a word game idea and develop a prototype in 3 days.
+The game I chose to develop was fairly simple, revolving around sending text messages. I got the game loop part done on the first day and spent the rest of my time polishing the screen shader for the phone.
+Unity Shadergraph shader The frame around the screen is from an actual picture of the phone from wikipedia.</description>
+    </item>
+    
+    <item>
+      <title>Mahjong 3D - WebGL Game</title>
+      <link>https://torres90.github.io/portfolioblog/posts/mahjong_3d/</link>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://torres90.github.io/portfolioblog/posts/mahjong_3d/</guid>
+      <description>Click the picture to play
+Gameplay
+How to play About the project Developed in one week as a coding challenge I grew overly fond of, this Unity game runs both on Android and on the web through WebGL. Please find the source code in the linked github repo.
+There are 3 levels of increasing difficulty, but they never get too hard as you always have 5 minutes to beat each one.</description>
+    </item>
+    
+  </channel>
+</rss>

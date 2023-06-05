@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    
+    <title>Francisco Torres</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+
+    <script src="/js/dark.js" defer=""></script>
+
+</head>
+
+<html>
+<!DOCTYPE html>
+<html>
+
+<body>
+  <header class="site-header">
+
+    <div class="wrapper">
+      <a class="muted small" href="https://torres90.github.io/portfolioblog/">Francisco Torres</a>
+    </div>
+  </header>
+</body>
+
+</html>
+
+<h1>ShaderToy Basics</h1>
+<p class="post-meta"><time itemprop="datePublished">June 5, 2023</time>
+</p>
+<h2 id="preparing-uvs">Preparing UVs</h2>
+<p>When writing a shader in ShaderToy, it is usual to prime your uvs in the following way:</p>
+<p><code>vec2 uv = fragCoord / iResolution.xy;</code></p>
+<p>this will make it so that your canvas goes from  0 to 1.</p>
+<p>Then we recenter the coordinates, putting (0,0) in the center of the screen, and making the UVs range from -1 to 1:</p>
+<p><code>v = uv * 2.0 - 1.0;</code></p>
+<p>Finally, we fix the aspect ratio of the canvas:</p>
+<p><code>uv.x *= (iResolution.x/iResolution.y); </code></p>
+<p>So far, this is pretty straightforward.</p>
+<p>What I didn&rsquo;t understand was how to combine these 3 lines of code into this:</p>
+<p><code>vec2 uv = (fragCoord * 2.0 - iResolution.xy) / iResolution.y;</code></p>
+<h3 id="how-this-is-done">How this is done</h3>
+<p>It&rsquo;s easier if we separate the <code>x</code> and <code>y</code> components. First the x component:</p>
+<p><code>float u = (fragCoord.x / iResolution.x * 2.0 - 1.0) * (iResolution.x/iResolution.y);</code></p>
+<p>through this:</p>
+<p><img src="/images/math/uv_x_component.png" alt=""></p>
+<p>becomes this:</p>
+<p><code>float u = (fragCoord.x * 2.0 - iResolution.x) / iResolution.y;</code></p>
+<p>Moving to the y component. This line:</p>
+<p><code>float v = fragCoord.y / iResolution.y * 2.0 - 1.0;</code></p>
+<p>through this:</p>
+<p><img src="/images/math/uv_y_component.png" alt=""></p>
+<p>becomes this:</p>
+<p><code>float v = (2.0 * fragCoord.y - iResolution.y) / iResolution.y;</code></p>
+<p>With that done we can perform both steps in one line! Here I&rsquo;ve included both <code>u</code> and <code>v</code> calculations side by side to see how we can easily combine these two steps:</p>
+<p><code>float u = (2.0 * fragCoord.x - iResolution.x) / iResolution.y;</code></p>
+<p><code>float v = (2.0 * fragCoord.y - iResolution.y) / iResolution.y;</code></p>
+<p><code>vec2 uv = (2.0 * fragCoord.xy - iResolution.xy) / iResolution.y</code></p>
+
+
+<footer>
+    <div>
+        <h3><a href="https://torres90.github.io/portfolioblog/posts">Back to all posts</a></h3>
+    </div>
+    <hr>
+    <p>Go <a href="https://torres90.github.io/portfolioblog//index.xml">here</a> for an RSS feed.</p>
+</footer>
+
+</html>
