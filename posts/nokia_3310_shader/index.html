@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    
+    <title>Francisco Torres</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="/js/dark.js" defer=""></script>
+
+</head>
+
+
+<html>
+<!DOCTYPE html>
+<html>
+
+<body>
+  <header class="site-header">
+
+    <div class="wrapper">
+      <a class="muted small" href="https://example.com/">Francisco Torres</a>
+    </div>
+  </header>
+</body>
+
+</html>
+
+<h1>Nokia 3310 screen shader</h1>
+<p class="post-meta"><time itemprop="datePublished">March 26, 2023</time>
+</p>
+<p>For an internal game jam at Arkadium, we each had to pick a word game idea and develop a prototype in 3 days.</p>
+<p>The game I chose to develop was fairly simple, revolving around sending text messages. I got the game loop part done on the first day and spent the rest of my time polishing the screen shader for the phone.</p>
+<h2 id="unity-shadergraph-shader">Unity Shadergraph shader</h2>
+<p><img src="/images/Nokia3310_shader_anim.webp" alt="a shader emulating the look of the old Nokia 3310 screen"></p>
+<p>The frame around the screen is from an actual picture of the phone from <a href="https://en.wikipedia.org/wiki/Nokia_3310">wikipedia</a>.</p>
+<p>Underneath, I used a render texture from a second camera to display a pixel perfect display and then used a shader built with Shadergraph to render it.</p>
+<p>I&rsquo;m not allowed to share the source code, but here&rsquo;s a breakdown of techniques I used:</p>
+<ul>
+<li><strong>Bending</strong> of the image, using the original screen aspect ratio.</li>
+<li>Adding a <strong>drop-shadow</strong> beneath the pixels, since the original screen was not laminated.</li>
+<li>Adding <strong>noise</strong> to the solid green background and the drop-shadow to give the impression of dirt and imperfect plastic screen.</li>
+<li>A <strong>vignette</strong> to darken the image where the phone shell would have cast a shadow on the screen.</li>
+<li>Adding a <strong>highlight</strong> point just outside the screen on the top left, to match the light direction of the picture. It also respects the <em>curvature</em> of the screen added in the first step.</li>
+</ul>
+<p><img src="/images/Nokia3310_shader_raw_vs_final.png" alt="a shader emulating the look of the old Nokia 3310 screen"></p>
+<h6 id="the-antenna-and-battery-icons-were-drawn-by-me-in-paint">The antenna and battery icons were drawn by me in paint</h6>
+
+
+<footer>
+    <div>
+        <h3><a href="https://example.com/posts">Back to all posts</a></h3>
+    </div>
+    <hr>
+    <p>Go <a href="https://example.com//index.xml">here</a> for an RSS feed.</p>
+</footer>
+
+</html>
