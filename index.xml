@@ -6,7 +6,19 @@
     <description>Recent content on Francisco Torres&#39; Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://torres90.github.io/portfolioblog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://torres90.github.io/portfolioblog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Journey Match</title>
+      <link>https://torres90.github.io/portfolioblog/posts/journey_match/</link>
+      <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://torres90.github.io/portfolioblog/posts/journey_match/</guid>
+      <description>Click here to play
+At Arkadium, we have recently published our first Unity cross platform game, Journey Match. It runs on browsers, iOS and Android (apps leaving internal beta soon).
+Journey Match is a re-imagining of another one of our titles: Mahjongg Dimensions, except instead of being a match 2 game, it&amp;rsquo;s now match 3!
+I worked on this game from concept to release. My contributions were focused mainly on:</description>
+    </item>
+    
     <item>
       <title>ShaderToy Basics</title>
       <link>https://torres90.github.io/portfolioblog/posts/shadertoy_basics/</link>
@@ -63,6 +75,28 @@ Unity Shadergraph shader The frame around the screen is from an actual picture o
 Gameplay
 How to play About the project Developed in one week as a coding challenge I grew overly fond of, this Unity game runs both on Android and on the web through WebGL. Please find the source code in the linked github repo.
 There are 3 levels of increasing difficulty, but they never get too hard as you always have 5 minutes to beat each one.</description>
+    </item>
+    
+    <item>
+      <title>Endless Runner</title>
+      <link>https://torres90.github.io/portfolioblog/posts/endless_runner/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://torres90.github.io/portfolioblog/posts/endless_runner/</guid>
+      <description>An Endless Runner Built In One Month While freelancing for the start-up Digital Influx, I coordinated a team of two Unity programmers (myself included) and two 3D/2D artists to create an Endless Runner game.
+Your browser does not support the video tag.The game was designed with low-power machines in mind from the start, as the target audience were young students who would be playing the game on their school computer’s browser.</description>
+    </item>
+    
+    <item>
+      <title>Cubist</title>
+      <link>https://torres90.github.io/portfolioblog/posts/cubist/</link>
+      <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://torres90.github.io/portfolioblog/posts/cubist/</guid>
+      <description>Cubist - AR App I made this demo for the archviz firm 1825, as they wanted to break into the AR scene.
+I used Unity 2019 with the AR Foundation and ARCore XR Plugin packages to build this.
+You point your camera and press the main button to draw voxels in the air around you, sculpting forms with your movement.
+You can try the app here: Cubist on Google Play</description>
     </item>
     
   </channel>
