@@ -44,17 +44,6 @@ Source code: Shader &amp;#34;Custom/Hollogram&amp;#34; { Properties { _RimColor 
     </item>
     
     <item>
-      <title>Test</title>
-      <link>https://torres90.github.io/portfolioblog/posts/test/</link>
-      <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://torres90.github.io/portfolioblog/posts/test/</guid>
-      <description>H1 Normal text.
-Resources https://latexeditor.lagrida.com/ for writing equations.
-Hugo cheat sheet To place files in the root folder of the website, place them inside the &amp;ldquo;static&amp;rdquo; folder. </description>
-    </item>
-    
-    <item>
       <title>Nokia 3310 screen shader</title>
       <link>https://torres90.github.io/portfolioblog/posts/nokia_3310_shader/</link>
       <pubDate>Sun, 26 Mar 2023 00:00:00 +0000</pubDate>
