@@ -82,7 +82,7 @@ Your browser does not support the video tag.The game was designed with low-powe
       <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://torres-xyz.github.io/portfolioblog/posts/cubist/</guid>
-      <description>Cubist - AR App I made this demo for the archviz firm 1825, as they wanted to break into the AR scene.
+      <description>Cubist - AR App I made this demo for the archviz firm 1825, as we wanted to break into the AR scene.
 I used Unity 2019 with the AR Foundation and ARCore XR Plugin packages to build this.
 You point your camera and press the main button to draw voxels in the air around you, sculpting forms with your movement.
 You can try the app here: Cubist on Google Play</description>
