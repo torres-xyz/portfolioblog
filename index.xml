@@ -6,7 +6,43 @@
     <description>Recent content on Francisco Torres&#39; Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://torres-xyz.github.io/portfolioblog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://torres-xyz.github.io/portfolioblog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fakedoor</title>
+      <link>https://torres-xyz.github.io/portfolioblog/posts/fakedoor/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://torres-xyz.github.io/portfolioblog/posts/fakedoor/</guid>
+      <description>At Fakedoor, I am currently working as a Team Lead and Senior Unity Developer.
+As a Team Lead I conduct most SCRUM ceremonies like daily stand-ups and sprint plannings. I am also in charge of hiring new talent and conducting interviews for new devs.
+As a Senior Dev I develop these, 3D science lessons:
+My team and I take the 3D scenes our artists create and we import then into Unity.</description>
+    </item>
+    
+    <item>
+      <title>Clean Code, by Uncle Bob</title>
+      <link>https://torres-xyz.github.io/portfolioblog/posts/clean_code/</link>
+      <pubDate>Fri, 29 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://torres-xyz.github.io/portfolioblog/posts/clean_code/</guid>
+      <description>After having finished The Pragmatic Programmer , I&amp;rsquo;ve started another fan favorite: &amp;lsquo;Clean Code - A Handbook of Agile Software Development&amp;rsquo; by Uncle Bob.
+It start&amp;rsquo;s its introduction with this osnews.com comic:
+It follows this with some of the industry leading experts take on what they think clean code means.
+It then concludes the introduction with the advice that this is a book that should be read at one&amp;rsquo;s own pace in order to fully understand the concepts it presents.</description>
+    </item>
+    
+    <item>
+      <title>The Pragmatic Programmer</title>
+      <link>https://torres-xyz.github.io/portfolioblog/posts/the_pragmatic_programmer/</link>
+      <pubDate>Sat, 10 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://torres-xyz.github.io/portfolioblog/posts/the_pragmatic_programmer/</guid>
+      <description>A book I&amp;rsquo;ve been meaning to read for a long time arrived last month and I&amp;rsquo;ve finally finished it.
+It was really interesting reading about so many concepts that we devs take for granted today - like DRY - in the way they were first introduced to the world.
+One thing that stuck with me was the Broken Window Theory:
+&amp;ldquo;Don&amp;rsquo;t leave &amp;ldquo;broken windows&amp;rdquo; (bad designs, wrong decisions, or poor code) unrepaired.</description>
+    </item>
+    
     <item>
       <title>Journey Match</title>
       <link>https://torres-xyz.github.io/portfolioblog/posts/journey_match/</link>
