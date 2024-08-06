@@ -10,6 +10,10 @@ body {
   overscroll-behavior-y: none;
 }
 
+pre {
+  tab-size: 1rem;
+  -moz-tab-size: 1rem;
+}
 img {
   max-width: 100%;
 }

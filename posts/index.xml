@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Francisco Torres&#39; Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://torres-xyz.github.io/portfolioblog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://torres-xyz.github.io/portfolioblog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visual Studio Code Snippets</title>
+      <link>https://torres-xyz.github.io/portfolioblog/posts/visual_studio_snippets/</link>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://torres-xyz.github.io/portfolioblog/posts/visual_studio_snippets/</guid>
+      <description>Pasting my VS Code Snippets here for quick reference:
+SerializeField Snippet Type sfield to get [SerializeField] private
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;&amp;lt;CodeSnippets xmlns=&amp;quot;http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet&amp;quot;&amp;gt;&amp;lt;CodeSnippet Format=&amp;quot;1.0.0&amp;quot;&amp;gt;&amp;lt;Header&amp;gt;&amp;lt;Title&amp;gt;[SerializeField]&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Francisco Torres&amp;lt;/Author&amp;gt;&amp;lt;Shortcut&amp;gt;sfield&amp;lt;/Shortcut&amp;gt;&amp;lt;/Header&amp;gt;&amp;lt;Snippet&amp;gt;&amp;lt;Code Language=&amp;quot;CSharp&amp;quot;&amp;gt;&amp;lt;![CDATA[[SerializeField] private $Type$;$end$]]&amp;gt;&amp;lt;/Code&amp;gt;&amp;lt;Declarations&amp;gt;&amp;lt;Literal&amp;gt;&amp;lt;ID&amp;gt;Type&amp;lt;/ID&amp;gt;&amp;lt;ToolTip&amp;gt;Variable type&amp;lt;/ToolTip&amp;gt;&amp;lt;Default&amp;gt;&amp;lt;/Default&amp;gt;&amp;lt;/Literal&amp;gt;&amp;lt;/Declarations&amp;gt;&amp;lt;/Snippet&amp;gt;&amp;lt;/CodeSnippet&amp;gt;&amp;lt;/CodeSnippets&amp;gt;Header Snippet Type header to get [Header(&amp;quot; &amp;quot;)]
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;&amp;lt;CodeSnippets xmlns=&amp;quot;http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet&amp;quot;&amp;gt;&amp;lt;CodeSnippet Format=&amp;quot;1.0.0&amp;quot;&amp;gt;&amp;lt;Header&amp;gt;&amp;lt;Title&amp;gt;Header Attribute&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Francisco Torres&amp;lt;/Author&amp;gt;&amp;lt;Shortcut&amp;gt;header&amp;lt;/Shortcut&amp;gt;&amp;lt;/Header&amp;gt;&amp;lt;Snippet&amp;gt;&amp;lt;Code Language=&amp;quot;CSharp&amp;quot;&amp;gt;&amp;lt;!</description>
+    </item>
+    
     <item>
       <title>Fakedoor</title>
       <link>https://torres-xyz.github.io/portfolioblog/posts/fakedoor/</link>
