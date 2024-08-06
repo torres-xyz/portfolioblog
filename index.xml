@@ -96,8 +96,7 @@ Unity Shadergraph shader The frame around the screen is from an actual picture o
       <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://torres-xyz.github.io/portfolioblog/posts/mahjong_3d/</guid>
-      <description>Click the picture to play
-Gameplay
+      <description>Play Mahjong 3D About the game Gameplay demo
 How to play About the project Developed in one week as a coding challenge I grew overly fond of, this Unity game runs both on Android and on the web through WebGL. Please find the source code in the linked github repo.
 There are 3 levels of increasing difficulty, but they never get too hard as you always have 5 minutes to beat each one.</description>
     </item>
