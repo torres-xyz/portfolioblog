@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Francisco Torres&#39; Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://torres-xyz.github.io/portfolioblog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://torres-xyz.github.io/portfolioblog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raylib</title>
+      <link>https://torres-xyz.github.io/portfolioblog/posts/raylib/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://torres-xyz.github.io/portfolioblog/posts/raylib/</guid>
+      <description>Yesterday I started playing around with the raylib library. It was surprisingly easy to get started with and use.
+I used &amp;lsquo;vcpkg&amp;rsquo; to install raylib and set up and the dependencies and environments and quickly completed a small Pong tutorial.
+I plan on expanding it in the future, and add menus and sound effects. I&amp;rsquo;ll keep posting updates here.</description>
+    </item>
+    
     <item>
       <title>Visual Studio Code Snippets</title>
       <link>https://torres-xyz.github.io/portfolioblog/posts/visual_studio_snippets/</link>
