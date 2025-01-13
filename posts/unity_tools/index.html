@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://torres-xyz.github.io/portfolioblog/css/style.css">
+    <link rel="stylesheet" href="https://torres-xyz.github.io/portfolioblog/css/fonts.css">
+    
+    <title>Francisco Torres</title>
+    <link rel="icon" type="image/png"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 640 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cstyle%3Esvg%7Bfill:%23ffffff%7D%3C/style%3E%3Cpath d='M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="https://torres-xyz.github.io/portfolioblog/font-awesome/css/font-awesome.min.css">
+</head>
+
+<html>
+<!DOCTYPE html>
+<html>
+
+<body>
+  <header class="site-header">
+
+    <div class="wrapper">
+      <a class="muted small" href="https://torres-xyz.github.io/portfolioblog/">Francisco Torres</a>
+    </div>
+  </header>
+</body>
+
+</html>
+
+<h1>Unity Tools</h1>
+<p class="post-meta"><time itemprop="datePublished">January 10, 2025</time>
+</p>
+<p>I&rsquo;ve done some custom Unity tools for different projects and for different companies.
+Here are some of them:</p>
+<h2 id="timeline-editor">Timeline Editor</h2>
+<p><img src="https://torres-xyz.github.io/portfolioblog/images/unity_tool_timeline.png" alt="Fakedoor Timeline"></p>
+<p>This timeline editor allows you to <strong>schedule</strong> different types of <strong>events</strong> in a Unity scene.
+If you create a <em>Linear</em> timeline, the script will wait for each timeline item to be finished
+before starting the next one.</p>
+<p>If you create a <em>Parallel</em> timeline, the script will play all timeline items at once.</p>
+<p>You can also <strong>chain multiple timelines</strong> together and they will play one after another.
+At the end, the script lets the website know when all the timelines have finished,
+prompting a &ldquo;Go to next lesson&rdquo; button to appear.</p>
+<h2 id="text-helper">Text Helper</h2>
+<p><img src="https://torres-xyz.github.io/portfolioblog/images/unity_tool_text_helper.png" alt="Fakedoor Text Helper"></p>
+<p>To render text in our projects we were using a combination of Text Mesh Pro (TMP) and
+a plugin called <a href="TEXDraw">https://willnode.gitlab.io/texdraw/</a>.</p>
+<p>Due to inconsistencies in both plugin&rsquo;s syntax, and to avoid writing the
+color hex codes manually there was a need for a tool that could <strong>convert</strong> the same
+text into <strong>different outputs</strong> depending on the plugin being used.</p>
+<p>And by using simple color tags like &ldquo;<c1> Text Here </c>&rdquo; we saved time when
+assigning color to the text and when changing it, as the tool <strong>replaces</strong> the <em>c1</em> tag
+with the first element in the &ldquo;Colors&rdquo; list, the <em>c2</em> tag with the second, and so forth.</p>
+<p>Additionally, this also meant we could <strong>offload</strong> the writing of this intermediate text to
+people outside the programming team.</p>
+
+
+<footer>
+    <hr>
+    <p>Website build using <a href="https://gohugo.io/">Hugo Framework</a>.</p>
+</footer>
+
+</html>

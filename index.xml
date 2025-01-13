@@ -6,7 +6,18 @@
     <description>Recent content on Francisco Torres&#39; Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://torres-xyz.github.io/portfolioblog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://torres-xyz.github.io/portfolioblog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unity Tools</title>
+      <link>https://torres-xyz.github.io/portfolioblog/posts/unity_tools/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://torres-xyz.github.io/portfolioblog/posts/unity_tools/</guid>
+      <description>I&amp;rsquo;ve done some custom Unity tools for different projects and for different companies. Here are some of them:
+Timeline Editor This timeline editor allows you to schedule different types of events in a Unity scene. If you create a Linear timeline, the script will wait for each timeline item to be finished before starting the next one.
+If you create a Parallel timeline, the script will play all timeline items at once.</description>
+    </item>
+    
     <item>
       <title>Raylib</title>
       <link>https://torres-xyz.github.io/portfolioblog/posts/raylib/</link>
