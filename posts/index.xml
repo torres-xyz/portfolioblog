@@ -6,21 +6,21 @@
     <description>Recent content in Posts on Francisco Torres&#39; Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://torres-xyz.github.io/portfolioblog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43; and Raylib</title>
+      <link>https://torres-xyz.github.io/portfolioblog/posts/cpp_and_raylib/</link>
+      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://torres-xyz.github.io/portfolioblog/posts/cpp_and_raylib/</guid>
+      <description>&lt;p&gt;I have been learning &lt;strong&gt;C++&lt;/strong&gt; for about a year now. I started by reading almost the entirety&#xA;of &lt;a href=&#34;https://learncpp.com/&#34;&gt;learncpp.com&lt;/a&gt;, and then I began developing some small games using &lt;a href=&#34;https://www.raylib.com/&#34;&gt;Raylib&lt;/a&gt;,&#xA;and it was great fun. At least until I hit the &lt;strong&gt;CMake&lt;/strong&gt; &amp;ldquo;wall&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;I have since read &lt;a href=&#34;https://www.packtpub.com/en-us/product/minimal-cmake-9781835080658&#34;&gt;Minimal CMake&lt;/a&gt; and &lt;a href=&#34;https://www.packtpub.com/en-us/product/modern-cmake-for-c-9781805123361&#34;&gt;Modern CMake for C++&lt;/a&gt;.&#xA;&lt;strong&gt;CMake&lt;/strong&gt; makes sense now, and I have come to enjoy it.&lt;/p&gt;&#xA;&lt;p&gt;With these skills I am now developing a simple card game with &lt;strong&gt;C++&lt;/strong&gt; and &lt;strong&gt;Raylib&lt;/strong&gt;,&#xA;as well as &lt;a href=&#34;https://github.com/ocornut/imgui&#34;&gt;Dear Imgui&lt;/a&gt; and &lt;a href=&#34;https://github.com/catchorg/Catch2&#34;&gt;catch2&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Unity Tools</title>
       <link>https://torres-xyz.github.io/portfolioblog/posts/unity_tools/</link>
       <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://torres-xyz.github.io/portfolioblog/posts/unity_tools/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve done some custom Unity tools for different projects and for different companies.&#xA;Here are some of them:&lt;/p&gt;&#xA;&lt;h2 id=&#34;timeline-editor&#34;&gt;Timeline Editor&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://torres-xyz.github.io/portfolioblog/images/unity_tool_timeline.png&#34; alt=&#34;Fakedoor Timeline&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This timeline editor allows you to &lt;strong&gt;schedule&lt;/strong&gt; different types of &lt;strong&gt;events&lt;/strong&gt; in a Unity scene.&#xA;If you create a &lt;em&gt;Linear&lt;/em&gt; timeline, the script will wait for each timeline item to be finished&#xA;before starting the next one.&lt;/p&gt;&#xA;&lt;p&gt;If you create a &lt;em&gt;Parallel&lt;/em&gt; timeline, the script will play all timeline items at once.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>C&#43;&#43; and Raylib</title>
-      <link>https://torres-xyz.github.io/portfolioblog/posts/cpp_and_raylib/</link>
-      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://torres-xyz.github.io/portfolioblog/posts/cpp_and_raylib/</guid>
-      <description>&lt;p&gt;I have been learning &lt;strong&gt;C++&lt;/strong&gt; for about a year now. I started by reading almost the entirety&#xA;of &lt;a href=&#34;https://learncpp.com/&#34;&gt;learncpp.com&lt;/a&gt;, and then I began developing some small games using &lt;a href=&#34;https://www.raylib.com/&#34;&gt;Raylib&lt;/a&gt;,&#xA;and it was great fun. At least until I hit the &lt;strong&gt;CMake&lt;/strong&gt; &amp;ldquo;wall&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;I have since read &lt;a href=&#34;https://www.packtpub.com/en-us/product/minimal-cmake-9781835080658&#34;&gt;Minimal CMake&lt;/a&gt; and &lt;a href=&#34;https://www.packtpub.com/en-us/product/modern-cmake-for-c-9781805123361&#34;&gt;Modern CMake for C++&lt;/a&gt;.&#xA;&lt;strong&gt;CMake&lt;/strong&gt; makes sense now, and I have come to enjoy it.&lt;/p&gt;&#xA;&lt;p&gt;With these skills I am now developing a simple card game with &lt;strong&gt;C++&lt;/strong&gt; and &lt;strong&gt;Raylib&lt;/strong&gt;,&#xA;as well as &lt;a href=&#34;https://github.com/ocornut/imgui&#34;&gt;Dear Imgui&lt;/a&gt; and &lt;a href=&#34;https://github.com/catchorg/Catch2&#34;&gt;catch2&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Raylib</title>
