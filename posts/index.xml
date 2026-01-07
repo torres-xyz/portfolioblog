@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Francisco Torres&#39; Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://torres-xyz.github.io/portfolioblog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raylib C&#43;&#43; Game</title>
+      <link>https://torres-xyz.github.io/portfolioblog/posts/cpp_project_raylib_game/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://torres-xyz.github.io/portfolioblog/posts/cpp_project_raylib_game/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://torres-xyz.github.io/portfolioblog/images/cmake_cards.webp&#34; alt=&#34;cmake_cards&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;tldr&#34;&gt;TLDR:&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/torres-xyz/cmake-cards-procedural&#34;&gt;GitHub repository link&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Please keep in mind this is a work in progress using placeholder assets (aka a lot of programmer art).&lt;/p&gt;&#xA;&lt;h1 id=&#34;a-card-game-written-in-c-with-raylib&#34;&gt;A card game written in C++ with Raylib&lt;/h1&gt;&#xA;&lt;p&gt;I have always loved TCGs, so I thought I would try to program one as a hobby project to practice C++.&lt;/p&gt;&#xA;&lt;p&gt;It is built on top of the Raylib library, uses CMake as its build system and Catch2 for testing.&#xA;I also added Dear Imgui as a quick way to create a debug UI.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>C&#43;&#43; and Raylib</title>
       <link>https://torres-xyz.github.io/portfolioblog/posts/cpp_and_raylib/</link>
